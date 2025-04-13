@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Reader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Reader</h1>
+    <!-- File Upload -->
+    <input type="file" id="pdf-upload" accept="application/pdf" />
+    <!-- PDF Viewer -->
+    <div id="pdf-viewer">
+      <canvas id="pdf-canvas"></canvas>
+    </div>
+    <!-- Navigation Controls -->
+    <div class="controls">
+      <button id="prev-page" disabled>Previous</button>
+      <span id="page-info">Page 1 of 1</span>
+      <button id="next-page" disabled>Next</button>
+    </div>
+  </div>
+
+  <!-- Include PDF.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
